@@ -1,0 +1,43 @@
+.slide{
+    height: 700px;
+    width: 250px;
+    transform: translate(-250px);
+    transition: 0.5s;
+    overflow: scroll;
+    background: white;
+}
+.side label{
+    margin-left: 20px;
+}
+.side label i{
+    font-size: 23px;
+}
+input:checked ~ .slide{
+    transition: 0.5s;
+    transform: translate(0);
+}
+.side input[type="checkbox"]{
+    display: none;
+}
+
+.slide .Nnav{
+    padding-top: 10px;
+}
+.slide .Nnav a{
+    font-family: 'Abel', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: black;
+    width: 250px;
+    letter-spacing: 1px;
+    
+}
+.slide .Nnav a i{
+    font-size: 17px;
+    padding: 0 15px 0 0;
+}
+.slide .Nnav a:hover{
+    color: white;
+    transition: 0.2s;
+    background: #000;
+}

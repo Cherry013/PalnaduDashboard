@@ -1,0 +1,235 @@
+.user {
+    background-image: url("https://images.livemint.com/img/2020/08/01/1600x900/20200611074L_1596271822944_1596271837060.jpg");
+    width: 47px;
+    height: 47px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+}
+
+/* ---------------- navbar ------------------- */
+
+.nav{
+    box-shadow: -6px -8px 28px 13px rgba(0,0,0,0.1);
+    height: 64px;
+}
+
+
+/* navbar ---> sidebar */
+
+.nav{
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 1;
+}
+
+/* navbar ---> sidebar ends */
+
+/* navbar content */
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 40px;
+}
+.nav p{
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+
+.container{
+   display: flex;
+   margin: 0 0 0 200px;
+}
+
+.sub-container{
+    display: flex;
+    margin: 25px 0 0 1px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-card{
+    box-sizing: border-box;
+    height: 200px;
+    width: 400px;
+    margin: 0 0 0 75px;
+    border-radius: 15px;
+}
+.card{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+.name-l{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Maven Pro', sans-serif;
+}
+.name-s{
+    text-align: center;
+    text-transform: capitalize;
+    padding-top: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* colors */
+
+.main-clr{
+    color: white;
+    background: linear-gradient(to right, #eb3349, #f45c43);
+}
+.clr-beg{
+    background: linear-gradient(90deg, #ffafbd,  #ffc3a0);
+}
+.clr-htl{ 
+    background: linear-gradient(to right, rgb(165, 164, 164), silver 100%);
+}
+.clr-shop{
+    background: linear-gradient(90deg, #23c4ec,  #6dd5ed);
+}
+.clr-rail{
+    background: linear-gradient(90deg, #eacda3, #fbbe6f);
+}
+.clr-brk{
+    background: linear-gradient(90deg, #6884ff 10%,  #b368ff);
+}
+.clr-fact{
+    background: #a1ffce;
+    background: linear-gradient(to right, #a1ffce, #e3ed98);
+}
+.clr-cons{
+    background: #ED87C4;
+    background: linear-gradient(to right, #ED87C4, #e73be4);}
+.clr-oth{
+    background-color: #FFDEE9;
+    background-image: linear-gradient(90deg, #ffbdd3 40%, #6ae9e5);  
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+.span-col-2{grid-column: span 2 / auto;}
+.span-row-2{grid-row: span 2 / auto;}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 501px){
+    .container-fluid {
+        width: 500px;
+    }
+    .nav{
+        box-shadow: none;
+        width: auto;
+        display: flex;
+    }
+    .nav p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .user {
+        display: none;
+    }
+    .container{
+        display: block;
+        margin: 0 0 0 0;
+    }
+    .main-div{
+        display: block;
+        width: 450px;
+    }
+    .sub-container{
+        display: block;
+    }
+    .main-card{
+        width: 200px;
+        height: 150px;
+        margin: 3px;
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+    .name-l{
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 15px;
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-family: 'Maven Pro', sans-serif;
+    }
+    .bar-chart{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:320px){
+    .nav{
+        box-shadow: none;
+        width: auto;
+        display: flex;
+    }
+    .nav p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+    .user {
+        display: none;
+    }
+    .container{
+        display: block;
+    }
+    .grid-1, .grid-2{
+        display: block;
+    }
+    .main-div{
+        display: block;
+    }
+    .sub-container{
+        display: block;
+    }
+    .main-card{
+        width: 200px;
+        margin: 3px;
+    }
+    .bar-chart{
+        display: none;
+    }
+}
